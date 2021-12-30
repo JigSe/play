@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">  
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+     <link rel="stylesheet" href="./styles/mystyles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   
+   </head>
+<body>
+ 
+  <div class="sidebar sidebars">
+    <ul class="logo_content">
+      <div class="top">
+          <li class="js-open-modal"> <i class='fa fa-bars has-text-light'></i></li>         
+      </div>     
+    </ul>    
+  </div>
+ 
+  <div class="modal">
+    <div class="modal__header">
+    
+      <a href="#" class="js-close-modal">X</a>
+    </div>
+   <ul>
+     <li><a href="index.html">Home</a> </li>
+     <li> <a href="page4.html">Admin Console</a> </li>
+   </ul>
+  </div>
+  <div class="topcolor mb-3">
+      <h5 class="p-4 "></h5>
+  </div>
+
+  
+  <div class="home_content">   
+    <div class="icon">
+       <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+    </div>
+    <div class="headings">
+        <p>End-to-End Price Management Analytics</p>
+    </div>
+    <div class="modal">
+      <div class="modal-background" style="width: 100vw;"></div>
+      <div class="modal-content" style="background-color: #fff;height: 300px; width: 700px;">
+       <h2 class="subheading" style="text-align: center; margin-top:100px; color:#42b4e6">Successfully submitted</h2>
+       <i class="fas fa-check-circle" aria-hidden="true" style="font-size: 10px;color: #42b4e6;"></i>
+      </div>
+      <button class="modal-close is-medium" aria-label="close"></button>
+    </div>
+      
+      <div class="columns">
+        <div class="column is-three-quarters">
+          <div class="form mb-3">
+              <h3></h3>
+              <div class="columns">
+                <div class="column ">
+                
+                  <div class="">
+                    <ul>
+                      <li><div class="lists mb-1">SESA-ID</div>  <input class="input" type="text" id="sesaid" name="requestorname" ></li>
+                     
+                    </ul>
+                  </div>
+                </div>
+                <div class="column ">
+                  
+                    <div class="">
+                      <ul>
+                       
+                        <li><div class="lists mb-1"> Name</div> <input class="input" type="text" id="username" name="requestorname" ></li>
+                                         
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="column ">
+                  
+                    <div class="">
+                      <ul>
+                         <li>
+                              <div class="lists mb-1">User Type</div>  
+                              <div class="select w100">
+                                  <select class="w100" id="user_type">
+                                    <option value="Admin">Admin</option>
+                                    <option value="DRL">DRL</option>                              
+                                  </select>
+                              </div>
+                        </li>                    
+                      </ul>
+                    </div>
+                  </div>
+               
+              </div>
+              <div class="mt-3 btss is-flex">
+                <button class="button is-success add">Add</button>
+                <a class="button is-danger" href="page4.html">Cancel</a>
+              </div>
+          </div>
+        
+        </div>
+       
+      </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="./js/add-admin.js" ></script>
+   <script src="./js/myjs.js"></script>
+</body>
+</html>

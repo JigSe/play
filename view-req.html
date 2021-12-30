@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">  
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+     <link rel="stylesheet" href="./styles/mystyles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   </head>
+<body>
+ 
+  <div class="sidebar sidebars">
+    <ul class="logo_content">
+      <div class="top">
+          <li class="js-open-modal"> <i class='fa fa-bars has-text-light'></i></li>         
+      </div>     
+    </ul>    
+  </div>
+
+  <div class="modal">
+    <div class="modal__header">
+    
+      <a href="#" class="js-close-modal">X</a>
+    </div>
+   <ul>
+     <li><a href="index.html">Home</a> </li>
+     <li> <a href="page4.html">Admin Console</a> </li>
+   </ul>
+  </div>
+  <div class="topcolor mb-3">
+      <h5 class="p-4 "></h5>
+  </div>
+
+  
+  <div class="home_content">   
+    <div class="icon">
+       <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+    </div>
+    <div class="headings">
+        <p>End-to-End Price Management Analytics</p>
+    </div>
+    <div class="columns mt-4">       
+      <a href="" id="download-link">Download File</a>
+        <div class="column mt-1">
+            <a class="button is-danger pull-right " id="reject-button">Reject </a>
+            <a class="button is-success pull-right mr-3 " id="approve-button">Approve </a>
+            
+        </div>           
+    </div>
+    
+      <div class="columns">
+       
+        <div class="column is-three-quarters">
+          <div class="form mb-3">
+              <h3>How is requesting and using these data ?</h3>
+              <div class="columns">
+                <div class="column requestor-details">
+                  <p class="mb-2">Requestor Details</p>
+                  <div class="border">
+                    <ul>
+                      <li><div class="lists mt-1">SESA</div>  <input class="input" type="text" id="reqsesa" name="SESA" placeholder="SESA631557"></li>
+                      <li><div class="lists mt-1"> Name</div> <input class="input" type="text" id="reqname" name="Name" placeholder="Karine Peres"></li>
+                      <li><div class="lists mt-1">Title</div> <input class="input" type="text" id="rertit" name="Title" placeholder="Data Governance"></li>
+                      <li><div class="lists mt-1">Business</div><input class="input" type="text" id="reqbusi" name="Business Division" placeholder="Global"></li>
+                      <li><div class="lists mt-1">Phone</div><input class="input" type="text" id="reqphon" name="Phone" placeholder="+353 087 269 2722"></li>                     
+                    </ul>
+                  </div>
+                </div>
+                <div class="column manager-details">
+                  <p class="mb-2">Manager Details</p>
+                  <div class="border">
+                    <ul>
+                      
+                        <li><div class="lists mt-1">SESA</div>  <input class="input" type="text" id="mansesa" name="SESA" placeholder="SESA 13141"></li>
+                        <li><div class="lists mt-1"> Name</div> <input class="input" type="text" id="manname" name="Name" placeholder="David Kuan Aun Yeo"></li>
+                        <li><div class="lists mt-1">Title</div> <input class="input" type="text" id="mantit" name="Title" placeholder="Digital Risk Leader - Digital Data Hub"></li>
+                        <li><div class="lists mt-1">Business</div><input class="input" type="text" id="manbusi" name="Business Division" placeholder="Govermance"></li>
+                        <li><div class="lists mt-1">Phone</div><input class="input" type="text" id="manphon" name="Phone" placeholder="+44 07717150644"></li>                     
+                      
+                                       
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="form">
+            <h5>Requestor</h5>
+            <div class="is-flex cont">
+              <div class="check  ">
+                <h6>Access Services <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                <div class="checks" id = "Access-services">
+                  <label class="checkbox mb-3">
+                    <input type="checkbox" value="Dashboard" id="Dashboard" name="Dashboard" onclick="return false" >
+                    Dashboard
+                  </label>
+                  <label class="checkbox mb-3">
+                    <input type="checkbox" value="Basic Tableau" id="ssbi" name="SSBI Basic Tableau" onclick="return false" >
+                    SSBI Basic Tableau
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" value="Advanced SQL" id="ssbiadv" name="SSBI Advanced SQL" onclick="return false" >
+                    SSBI Advanced SQL
+                  </label>
+                </div>
+              
+              </div>               
+              <!-- <div>
+                <h6>Organization <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                <div class="select">
+                  <select>
+                    <option>Global</option>
+                
+                  </select>
+                </div>
+              </div>
+              <div>
+                <h6>Division/Zone <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                <div class="select">
+                  <select>
+                    <option>Govermance</option>
+                
+                  </select>
+                </div>
+              </div> -->
+              <div>
+                <h6>Access Expiry Date <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                <input type="text" class="input expirydate"  id="date" >
+              </div>
+            </div>
+            <div class="downfa">
+            
+              <div class="fx">
+                <h5>Data Scope</h5>
+                <div class="fxs">
+                
+              
+                  <div >
+                    <h6>Division <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                      <select name="" id="Division"></select>
+                  </div>
+                
+                  <div class="ml-5 contry">
+                    <h6>Country <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                    <select name="" id="Country"></select>
+                      
+  
+                    <label class="checkbox mt-3">
+                      <input type="checkbox" id="Include-CSC-Data" onclick="return false">
+                      Include CSC Data
+                    </label>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div>
+              <h6>Additional Comments/Purpose </h6>
+              <textarea class="textarea " id="msg" placeholder="comment should be factual, objective and non-offensive please rember.......by the related person"></textarea>
+            </div>
+         </div>
+        </div>
+        <div class="column">
+          <div class="form ">
+            <div class="is-flex cir">  
+              <div class="circle small yellowcir blue-background"> </div>
+              <div class="conts">Request  </div> 
+
+            </div>
+          
+          
+          
+            <div class=" lines"></div>
+            <div class="is-flex cir">  
+              <div class="circle small yellowcir" name ="Administrator Status"> </div>
+              <div class="conts">Administrator Approval    </div>
+            </div>          
+            <div class=" lines"></div>
+            <div class="is-flex cir">  
+              <div class="circle small yellowcir"> </div>
+              <div  class="conts">Req Expired</div>
+             
+            </div>          
+          
+          </div>
+                   
+          
+          </div>
+        </div>
+       
+      </div>
+  </div>
+   <script src="./js/view-req.js" ></script>
+   <script src="./js/myjs.js"></script>
+</body>
+</html>

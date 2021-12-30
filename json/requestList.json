@@ -1,0 +1,105 @@
+{
+  "Requests": {
+   
+      "REQ1": {
+        "Requestor_Details" : {
+          "SESA" : "SESA620319", 
+          "Name" : "Anna", 
+          "Title" : "Analyst", 
+          "Business_Division" : "Data sec", 
+          "Phone" : "129766"
+        },
+        "Manager_Details" : {
+          "SESA" : "SESA123", 
+          "Name" : "David", 
+          "Title" : "Data sec leader", 
+          "Business_Division" : "Data sec", 
+          "Phone" : "129766"
+        }, 
+        "Date_requested" : "12-11-2021", 
+        "Managers_Approval_Status" : "Approved", 
+        "Administrator_Status" :  "Pending", 
+        "Access_services" : ["Dashboards", "Basic Tableau"], 
+        "Access_expiry_date" : "12-11-2022", 
+        "Country" : ["India"], 
+        "Division" : ["ENM DIGITAL ENERGY", "ENM OFF MATRIX", "ENM SECURE POWER","ERM", "EBA", "INtelDS"], 
+        "Include_CSC_Data" : "True", 
+        "Additional_Comments_Purpose" : "None"
+    },
+    "REQ2": {
+      "Requestor_Details" : {
+        "SESA" : "SESA620319", 
+        "Name" : "Anna", 
+        "Title" : "Analyst", 
+        "Business_Division" : "Data sec", 
+        "Phone" : "129766"
+      },
+      "Manager_Details" : {
+        "SESA" : "SESA123", 
+        "Name" : "David", 
+        "Title" : "Data sec leader", 
+        "Business_Division" : "Data sec", 
+        "Phone" : "129766"
+      }, 
+      "Date_requested" : "12-11-2021", 
+      "Managers_Approval_Status" : "Pending", 
+      "Administrator_Status" :  "Pending", 
+      "Access_services" : ["Dashboards", "Basic Tableau"], 
+      "Access_expiry_date" : "12-11-2022", 
+      "Country" : ["Afghanistan","India"], 
+      "Division" : ["ENM DIGITAL ENERGY", "ENM OFF MATRIX", "ENM SECURE POWER","ERM", "EBA", "INtelDS"], 
+      "Include_CSC_Data" : "True", 
+      "Additional_Comments_Purpose" : "None"
+  },
+    "REQ3": {
+        "Requestor_Details" : {
+          "SESA" : "SESA620319", 
+          "Name" : "Anna", 
+          "Title" : "Analyst", 
+          "Business_Division" : "Data sec", 
+          "Phone" : "129766"
+        },
+        "Manager_Details" : {
+          "SESA" : "SESA123", 
+          "Name" : "David", 
+          "Title" : "Data sec leader", 
+          "Business_Division" : "Data sec", 
+          "Phone" : "129766"
+        }, 
+        "Date_requested" : "12-11-2021", 
+        "Managers_Approval_Status" : "Pending", 
+        "Administrator_Status" :  "Pending", 
+        "Access_services" : ["Dashboards", "Basic Tableau"], 
+        "Access_expiry_date" : "12-11-2022", 
+        "Country" : ["India"], 
+        "Division" : ["ENM DIGITAL ENERGY", "ENM OFF MATRIX", "ENM SECURE POWER","ERM", "EBA", "INtelDS"],  
+        "Include_CSC_Data" : "True", 
+        "Additional_Comments_Purpose" : "None"
+    },
+    "REQ4": {
+      "Requestor_Details" : {
+        "SESA" : "SESA620319", 
+        "Name" : "Anna", 
+        "Title" : "Analyst", 
+        "Business_Division" : "Data sec", 
+        "Phone" : "129766"
+      },
+      "Manager_Details" : {
+        "SESA" : "SESA123", 
+        "Name" : "David", 
+        "Title" : "Data sec leader", 
+        "Business_Division" : "Data sec", 
+        "Phone" : "129766"
+      }, 
+      "Date_requested" : "12-11-2021", 
+      "Managers_Approval_Status" : "Approved", 
+      "Administrator_Status" :  "Pending", 
+      "Access_services" : ["Dashboards", "Basic Tableau"], 
+      "Access_expiry_date" : "12-11-2022", 
+      "Country" : ["India"], 
+      "Division" : ["ENM DIGITAL ENERGY", "ENM OFF MATRIX", "ENM SECURE POWER","ERM", "EBA", "INtelDS"],  
+      "Include_CSC_Data" : "True", 
+      "Additional_Comments_Purpose" : "None"
+  }
+  }
+}

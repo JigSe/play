@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">  
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+     <link rel="stylesheet" href="./styles/mystyles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   </head>
+<body>
+ 
+  <div class="sidebar sidebars">
+    <ul class="logo_content">
+      <div class="top">
+          <li class="js-open-modal"> <i class='fa fa-bars has-text-light'></i></li>         
+      </div>     
+    </ul>    
+  </div>
+ 
+  <div class="modal">
+    <div class="modal__header">
+    
+      <a href="#" class="js-close-modal">X</a>
+    </div>
+   <ul>
+     <li><a href="index.html">Home</a> </li>
+     <li> <a href="page4.html">Admin Console</a> </li>
+   </ul>
+  </div>
+  <div class="topcolor mb-3">
+    <h5 class="p-4 "></h5>
+</div>
+
+  
+  <div class="home_content">
+   
+    <div class="icon">
+     <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+  </div>
+  <div class="headings mb-5">
+      <p>End-to-End Price Management Analytics</p>
+  </div>
+ 
+      <div class="columns">
+        <div class="column is-three-quarters">
+          <div class="form mb-3">
+              <h3>Who is requesting and using these data ?</h3>
+
+              
+              <div class="columns">
+                <div class="column requestor-details">
+                  <p class="mb-2">Requestor Details</p>
+                  <div class="border">
+                    <ul>
+                      <li><div class="lists mt-1">SESA</div>  <input class="input" type="text" id="reqsesa" name="requestorname" placeholder="SESA631557"></li>
+                      <li><div class="lists mt-1"> Name</div> <input class="input" type="text" id="reqname" name="requestorname" placeholder="Karine Peres"></li>
+                      <li><div class="lists mt-1">Title</div> <input class="input" type="text" id="rertit" name="requestortitle" placeholder="Data Governance"></li>
+                      <li><div class="lists mt-1">Business</div><input class="input" type="text" id="reqbusi" name="requestorbusiness" placeholder="Global"></li>
+                      <li><div class="lists mt-1">Phone</div><input class="input" type="text" id="reqphon" name="requestorphone" placeholder="+353 087 269 2722"></li>                     
+                    </ul>
+                  </div>
+                </div>
+                <div class="column manager-details">
+                  <p class="mb-2">Manager Details</p>
+                  <div class="border">
+                    <ul>
+                      
+                        <li><div class="lists mt-1">SESA</div>  <input class="input" type="text" id="mansesa" placeholder="SESA 13141"></li>
+                        <li><div class="lists mt-1"> Name</div> <input class="input" type="text" id="manname" placeholder="David Kuan Aun Yeo"></li>
+                        <li><div class="lists mt-1">Title</div> <input class="input" type="text" id="mantit"placeholder="Digital Risk Leader - Digital Data Hub"></li>
+                        <li><div class="lists mt-1">Business</div><input class="input" type="text" id="manbusi"  placeholder="Govermance"></li>
+                        <li><div class="lists mt-1">Phone</div><input class="input" type="text" id="manphon" placeholder="+44 07717150644"></li>                     
+                      
+                                       
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="form">
+            <h5>Requestor</h5>
+            <div class="is-flex cont">
+              <div class="check  ">
+                <div class="tooltip"> <h6>Access Services <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                  <div class="tooltiptext">
+                    <ul>
+                      <li>Dashboards: Sets of executive dashboards published in Tableau Server.</li>
+                      <li>SSBI Basic Tableau: Enables access to data for users that want to create their own analytics using Tableau. Requires user to have a Tableau Creator license that can be requested in 2929it (link)</li>
+                      <li>SSBI Advanced SQL: Enables access to full scope of data via SQL Client for users that want to create their own analytics. SQL skills are needed.</li>
+
+                    </ul>
+                  </div>
+                </div>
+               
+                <div class="checks">
+                  <label class="checkbox mb-3">
+                    <input type="checkbox" value="Dashboard" id="dash" name="access[]">
+                    Dashboard
+                  </label>
+                  <label class="checkbox mb-3">
+                    <input type="checkbox" value="SSBI Basic Tableau" id="ssbi" name="access[]">
+                    SSBI Basic Tableau
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" value="SSBI Advanced SQL" id="ssbiadv" name="access[]">
+                    SSBI Advanced SQL
+                  </label>
+                </div>
+              
+              </div>               
+              <!-- <div>
+                <h6>Organization <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                <div class="select">
+                  <select>
+                    <option>Global</option>
+                
+                  </select>
+                </div>
+              </div>
+              <div>
+                <h6>Division/Zone <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                <div class="select">
+                  <select>
+                    <option>Govermance</option>
+                
+                  </select>
+                </div>
+              </div> -->
+              <div>
+                <h6>Access Expiry Date <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                <input class="input" type="date" id="date" placeholder="Text input">
+              </div>
+            </div>
+            <div class="downfa">
+            
+              <div class="fx">
+                <h5>Data Scope</h5>
+                <div class="fxs">
+                
+              
+                  <div>
+                    <h6>Division <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                      <div id="list1" class="dropdown-check-list" tabindex="100">
+                        <span class="anchor">Select </span>
+                        <ul id="items" name="items" class="items">
+                            <li><input type="checkbox"  class="all" onclick="allcheck();" /> ALL </li>
+                            <li><input type="checkbox" name="division[]" value="ENM DIGITAL ENERGY" class="checkss" />ENM DIGITAL ENERGY</li>
+                            <li><input type="checkbox" name="division[]" value="ENM HOME DISTRIBUTION " class="checkss"  />ENM HOME DISTRIBUTION </li>
+                            <li><input type="checkbox" name="division[]" value="ENM OFF MATRIX" class="checkss"  />ENM OFF MATRIX </li>
+                            <li><input type="checkbox" name="division[]" value="ENM POWER PRODUCTS" class="checkss"  />ENM POWER PRODUCTS </li>
+                            <li><input type="checkbox" name="division[]" value="ENM POWER SYSTEMS" class="checkss"  />ENM POWER SYSTEMS</li>
+
+                            <li><input type="checkbox" name="division[]" value="ENM SECURE POWER" class="checkss"  />ENM SECURE POWER
+                            </li>
+                            <li><input type="checkbox" name="division[]" value="ENM SECURE POWER" class="checkss"  />ENM SUSTAINABILITY
+                            </li>
+                            <li><input type="checkbox" name="division[]" value="IND AUT SOFTWARE" class="checkss"  />IND AUT SOFTWARE
+                            </li>
+                            <li><input type="checkbox" name="division[]" value="IND AUTOMATION OPS" class="checkss"  />IND AUTOMATION OPS
+                            </li>
+                            <li><input type="checkbox" name="division[]" value="IND PROCESS AUTOMATION" class="checkss"  />IND PROCESS AUTOMATION</li>
+                            <li><input type="checkbox" name="division[]" value="SCE IND AUT FIELD SERV" class="checkss"  />SCE IND AUT FIELD SERV</li>
+                            <li><input type="checkbox" name="division[]" value="SCE POWER FIELD SERV" class="checkss"  />SCE POWER FIELD SERV.</li>
+                            <li><input type="checkbox" name="division[]" value="SCE SECURE POWER SERV" class="checkss"  />SCE SECURE POWER SERV</li>
+                            <li><input type="checkbox" name="division[]" value="SOLAR" class="checkss"  />SOLAR</li> 
+                           
+                        </ul>
+                    </div>                   
+                  </div>
+                
+                  <div class="ml-5 contry">
+                    <h6>Country <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></h6>
+                    <div id="list2" class="dropdown-check-list" tabindex="100">
+                      <span class="anchors">Select </span>
+                      <ul id="countries" name="countries" class="countries">
+                          <li><input type="checkbox"  class="allcountry" onclick="allcountry();" /> ALL </li>
+                           <li><input type="checkbox" name="country[]" value="Afghanistan" class="country" /> Afghanistan</li>
+                           <li><input type="checkbox" name="country[]" value="Aland Islands" class="country" /> Aland Islands</li>
+                           <li><input type="checkbox" name="country[]" value="Albania" class="country" /> Albania</li>
+                           <li><input type="checkbox" name="country[]" value="Algeria" class="country" /> Algeria</li>
+                           <li><input type="checkbox" name="country[]" value="American Samoa" class="country" /> American Samoa</li>
+                           <li><input type="checkbox" name="country[]" value="Andorra" class="country" /> Andorra</li>
+                           <li><input type="checkbox" name="country[]" value="Angola" class="country" /> Angola</li>
+                           <li><input type="checkbox" name="country[]" value="Anguilla" class="country" /> Anguilla</li>
+                            <li><input type="checkbox" name="country[]" value="Antarctica" class="country" />Antarctica</li>
+                           <li><input type="checkbox" name="country[]" value=" Antigua/Barbuda" class="country" /> Antigua/Barbuda</li>
+                           <li><input type="checkbox" name="country[]" value="Argentina" class="country" /> Argentina</li>
+                           <li><input type="checkbox" name="country[]" value="Armenia" class="country" /> Armenia</li>
+                           <li><input type="checkbox" name="country[]" value="Aruba"  class="country" /> Aruba</li>
+                           <li><input type="checkbox" name="country[]" value="Australia" class="country" /> Australia</li>
+                           <li><input type="checkbox" name="country[]" value="Austria" class="country" /> Austria</li>
+                           <li><input type="checkbox" name="country[]" value="Azerbaijan" class="country" /> Azerbaijan</li>
+                           <li><input type="checkbox" name="country[]" value="Bahamas" class="country" /> Bahamas</li>
+                           <li><input type="checkbox" name="country[]" value="Bahrain" class="country" /> Bahrain</li>
+                           <li><input type="checkbox" name="country[]" value="Bangladesh" class="country" /> Bangladesh</li>
+                           <li><input type="checkbox" name="country[]" value="Barbados" class="country" /> Barbados</li>
+                           <li><input type="checkbox"name="country[]" value="Belarus"  class="country" /> Belarus</li>
+                           <li><input type="checkbox"name="country[]" value="Belgium"  class="country" /> Belgium</li>
+                           <li><input type="checkbox"name="country[]" value="Belize"  class="country" /> Belize</li>
+                           <li><input type="checkbox"name="country[]" value="Benin"  class="country" /> Benin</li>
+                           <li><input type="checkbox"name="country[]" value="Bermuda"  class="country" /> Bermuda</li>
+                           <li><input type="checkbox"name="country[]" value="Bhutan"  class="country" /> Bhutan</li>
+                          <li><input type="checkbox" name="country[]" value="Bolivia" class="country" />  Bolivia</li>
+                           <li><input type="checkbox" name="country[]" value="Bonaire, Sint Eustatius and Saba" class="country" /> Bonaire, Sint Eustatius and Saba</li>
+                           <li><input type="checkbox"name="country[]" value="Bosnia and Herzegovina"  class="country" /> Bosnia and Herzegovina</li>
+                           <li><input type="checkbox"name="country[]" value="Botswana"  class="country" /> Botswana</li>
+                           <li><input type="checkbox"name="country[]" value="Bouvet Island"  class="country" /> Bouvet Island</li>
+                           <li><input type="checkbox"name="country[]" value="Brazil"  class="country" /> Brazil</li>
+                           <li><input type="checkbox"name="country[]" value="British Indian Ocean Territory"  class="country" /> British Indian Ocean Territory</li>
+                           <li><input type="checkbox"name="country[]" value="Brunei Darussalam"  class="country" /> Brunei Darussalam</li>
+                           <li><input type="checkbox"name="country[]" value="Bulgaria"  class="country" /> Bulgaria</li>
+                           <li><input type="checkbox"name="country[]" value="Burkina Faso"  class="country" /> Burkina Faso</li>
+                           <li><input type="checkbox"name="country[]" value="Burundi"  class="country" /> Burundi</li>
+                           <li><input type="checkbox" name="country[]" value="Cambodia" class="country" /> Cambodia</li>
+                           <li><input type="checkbox"name="country[]" value="Cameroon"  class="country" /> Cameroon</li>
+                          <li><input type="checkbox"name="country[]" value="Canada"  class="country" />  Canada</li>
+                           <li><input type="checkbox" name="country[]" value="Cape Verde" class="country" /> Cape Verde</li>
+                           <li><input type="checkbox"name="country[]" value="Cayman Islands"  class="country" /> Cayman Islands</li>
+                           <li><input type="checkbox"name="country[]" value="Central African Republic"  class="country" /> Central African Republic</li>
+                           <li><input type="checkbox"name="country[]" value="Chad"  class="country" /> Chad</li>
+                           <li><input type="checkbox"name="country[]" value="Chile"  class="country" /> Chile</li>
+                           <li><input type="checkbox"name="country[]" value="China"  class="country" /> China</li>
+                           <li><input type="checkbox"name="country[]" value="Christmas Island"  class="country" /> Christmas Island</li>
+                           <li><input type="checkbox" name="country[]" value="Cocos (Keeling) Islands" class="country" /> Cocos (Keeling) Islands</li>
+                           <li><input type="checkbox"name="country[]" value="Colombia"  class="country" /> Colombia</li>
+                            <li><input type="checkbox"name="country[]" value="Comoros"  class="country" />Comoros</li>
+                            <li><input type="checkbox"name="country[]" value="Congo"  class="country" />Congo</li>
+                           <li><input type="checkbox"name="country[]" value="Congo, The Democratic Republic Of The"  class="country" /> Congo, The Democratic Republic Of The</li>
+                           <li><input type="checkbox"name="country[]" value="Cook Islands"  class="country" /> Cook Islands</li>
+                          <li><input type="checkbox" name="country[]" value="Costa Rica" class="country" />  Costa Rica</li>
+                           <li><input type="checkbox" name="country[]" value="Cote d'Ivoire" class="country" /> Cote d'Ivoire</li>
+                           <li><input type="checkbox" name="country[]" value="Croatia" class="country" /> Croatia</li>
+                           <li><input type="checkbox" name="country[]" value="Cuba" class="country" /> Cuba</li>
+                           <li><input type="checkbox" name="country[]" value="Curacao" class="country" /> Curacao</li>
+                           <li><input type="checkbox" name="country[]" value="Cyprus" class="country" /> Cyprus</li>
+                           <li><input type="checkbox" name="country[]" value="Czech Republic" class="country" /> Czech Republic</li>
+                           <li><input type="checkbox" name="country[]" value="Denmark" class="country" /> Denmark</li>
+                           <li><input type="checkbox" name="country[]" value="Djibouti" class="country" /> Djibouti</li>
+                           <li><input type="checkbox"name="country[]" value="Dominica"  class="country" /> Dominica</li>
+                           <li><input type="checkbox"name="country[]" value="Dominican Republic"  class="country" /> Dominican Republic</li>
+                           <li><input type="checkbox"name="country[]" value="East Timor"  class="country" /> East Timor</li>
+                           <li><input type="checkbox"name="country[]" value="Ecuador"  class="country" /> Ecuador</li>
+                           <li><input type="checkbox"name="country[]" value="Egypt"  class="country" /> Egypt</li>
+                           <li><input type="checkbox" name="country[]" value="El Salvador" class="country" /> El Salvador</li>
+                           <li><input type="checkbox" name="country[]" value="Equatorial Guinea" class="country" /> Equatorial Guinea</li>
+                           <li><input type="checkbox" name="country[]" value="Eritrea" class="country" /> Eritrea</li>
+                           <li><input type="checkbox" name="country[]" value="Estonia" class="country" /> Estonia</li>
+                           <li><input type="checkbox" name="country[]" value="Eswatini" class="country" /> Eswatini</li>
+                           <li><input type="checkbox" name="country[]" value="Ethiopia" class="country" /> Ethiopia</li>
+                           <li><input type="checkbox"name="country[]" value="Falkland Islands"  class="country" /> Falkland Islands</li>
+                           <li><input type="checkbox"name="country[]" value="Faroe Islands"  class="country" /> Faroe Islands</li>
+                           <li><input type="checkbox"name="country[]" value="Fiji"  class="country" /> Fiji</li>
+                           <li><input type="checkbox"name="country[]" value="Finland"  class="country" /> Finland</li>
+                           <li><input type="checkbox"name="country[]" value="France"  class="country" /> France</li>
+                           <li><input type="checkbox" name="country[]" value="French Guiana" class="country" /> French Guiana</li>
+                           <li><input type="checkbox" name="country[]" value="French Polynesia" class="country" /> French Polynesia</li>
+                           <li><input type="checkbox" name="country[]" value="French Southern Territories" class="country" /> French Southern Territories</li>
+                           <li><input type="checkbox" name="country[]" value="Gabon" class="country" /> Gabon</li>
+                           <li><input type="checkbox"name="country[]" value="Gambia"  class="country" /> Gambia</li>
+                           <li><input type="checkbox" name="country[]" value="Georgia" class="country" /> Georgia</li>
+                           <li><input type="checkbox"name="country[]" value="Germany"  class="country" /> Germany</li>
+                          <li><input type="checkbox"name="country[]" value="Ghana"  class="country" />  Ghana</li>
+                           <li><input type="checkbox"name="country[]" value="Gibraltar"  class="country" /> Gibraltar</li>
+                           <li><input type="checkbox" name="country[]" value="Greece" class="country" /> Greece</li>
+                           <li><input type="checkbox"name="country[]" value="Greenland"  class="country" /> Greenland</li>
+                           <li><input type="checkbox"name="country[]" value="Grenada"  class="country" /> Grenada</li>
+                           <li><input type="checkbox" name="country[]" value="Guadeloupe" class="country" /> Guadeloupe</li>
+                           <li><input type="checkbox" name="country[]" value="Guam" class="country" /> Guam</li>
+                           <li><input type="checkbox"name="country[]" value="Guatemala"  class="country" /> Guatemala</li>
+                           <li><input type="checkbox" name="country[]" value="Guernsey" class="country" /> Guernsey</li>
+                           <li><input type="checkbox"name="country[]" value="Guinea"  class="country" /> Guinea</li>
+                           <li><input type="checkbox"name="country[]" value="Guinea-Bissau"  class="country" /> Guinea-Bissau</li>
+                           <li><input type="checkbox"name="country[]" value="Guyana"  class="country" /> Guyana</li>
+                           <li><input type="checkbox"name="country[]" value="Haiti"  class="country" /> Haiti</li>
+                           <li><input type="checkbox" name="country[]" value="Heard Island and McDonald Islands" class="country" /> Heard Island and McDonald Islands</li>
+                           <li><input type="checkbox" name="country[]" value="Honduras" class="country" /> Honduras</li>
+                           <li><input type="checkbox"name="country[]" value="Hong Kong, China"  class="country" /> Hong Kong, China</li>
+                           <li><input type="checkbox"name="country[]" value="Hungary"  class="country" /> Hungary</li>
+                           <li><input type="checkbox"name="country[]" value="Iceland"  class="country" /> Iceland</li>
+                           <li><input type="checkbox" name="country[]" value="India" class="country" /> India</li>
+                           <li><input type="checkbox" name="country[]" value="Indonesia" class="country" /> Indonesia</li>
+                           <li><input type="checkbox" name="country[]" value="Iran, Islamic Republic Of" class="country" /> Iran, Islamic Republic Of</li>
+                           <li><input type="checkbox"name="country[]" value="Iraq"  class="country" /> Iraq</li>
+                           <li><input type="checkbox"name="country[]" value="Ireland"  class="country" /> Ireland</li>
+                           <li><input type="checkbox" name="country[]" value="Isle of Man" class="country" /> Isle of Man</li>
+                           <li><input type="checkbox" name="country[]" value="Israel" class="country" /> Israel</li>
+                           <li><input type="checkbox" name="country[]" value="Italy" class="country" />Italy</li>
+                           <li><input type="checkbox" name="country[]" value="Jamaica" class="country" /> Jamaica</li>
+                           <li><input type="checkbox" name="country[]" value="Japan" class="country" /> Japan</li>
+                           <li><input type="checkbox"name="country[]" value="Jersey"  class="country" /> Jersey</li>
+                            <li><input type="checkbox"name="country[]" value="Jordan"  class="country" />Jordan</li>
+                            <li><input type="checkbox"name="country[]" value="Kazakhstan"  class="country" />Kazakhstan</li>
+                            <li><input type="checkbox"name="country[]" value="Kenya"  class="country" />Kenya</li>
+                           <li><input type="checkbox"name="country[]" value="Kiribati"  class="country" /> Kiribati</li>
+                           <li><input type="checkbox" name="country[]" value="Korea (the Democratic People's Republic of)" class="country" /> Korea (the Democratic People's Republic of)</li>
+                           <li><input type="checkbox"name="country[]" value="Korea, Republic of"  class="country" /> Korea, Republic of</li>
+                           <li><input type="checkbox"name="country[]" value="Kosovo"  class="country" /> Kosovo</li>
+                           <li><input type="checkbox"name="country[]" value="Kuwait"  class="country" /> Kuwait</li>
+                           <li><input type="checkbox"name="country[]" value="Kyrgyzstan"  class="country" /> Kyrgyzstan</li>
+                           <li><input type="checkbox"name="country[]" value="Laos" class="country" /> Laos</li>
+                          <li><input type="checkbox" name="country[]" value="Latvia" class="country" />  Latvia</li>
+                           <li><input type="checkbox" name="country[]" value="Lebanon" class="country" /> Lebanon</li>
+                           <li><input type="checkbox" name="country[]" value="Lesotho" class="country" /> Lesotho</li>
+                           <li><input type="checkbox"name="country[]" value="Liberia"  class="country" /> Liberia</li>
+                           <li><input type="checkbox"name="country[]" value="Libya"  class="country" /> Libya</li>
+                           <li><input type="checkbox"name="country[]" value="Liechtenstein"  class="country" /> Liechtenstein</li>
+                           <li><input type="checkbox"name="country[]" value="Lithuania"  class="country" /> Lithuania</li>
+                           <li><input type="checkbox"name="country[]" value="Luxembourg"  class="country" /> Luxembourg</li>
+                           <li><input type="checkbox"name="country[]" value="Macao, China"  class="country" /> Macao, China</li>
+                           <li><input type="checkbox"name="country[]" value="Macedonia"  class="country" /> Macedonia</li>
+                           <li><input type="checkbox"name="country[]" value="Madagascar"  class="country" />  Madagascar</li>
+                            <li><input type="checkbox"name="country[]" value="Malawi"  class="country" />Malawi</li>
+                            <li><input type="checkbox"name="country[]" value="Malaysia"  class="country" />Malaysia</li>
+                            <li><input type="checkbox"name="country[]" value="Maldives"  class="country" />Maldives</li>
+                            <li><input type="checkbox"name="country[]" value="Mali"  class="country" />Mali</li>
+                            <li><input type="checkbox"name="country[]" value="Malta"  class="country" />Malta</li>
+                           <li><input type="checkbox" name="country[]" value="Marshall Islands" class="country" /> Marshall Islands</li>
+                           <li><input type="checkbox" name="country[]" value="Martinique" class="country" /> Martinique</li>
+                            <li><input type="checkbox" name="country[]" value="Mauretania" class="country" />Mauretania</li>
+                           <li><input type="checkbox" name="country[]" value="Mauritius" class="country" /> Mauritius</li>
+                           <li><input type="checkbox" name="country[]" value="Mayotte" class="country" /> Mayotte</li>
+                           <li><input type="checkbox" name="country[]" value="Mexico" class="country" /> Mexico</li>
+                           <li><input type="checkbox"name="country[]" value="Micronesia"  class="country" /> Micronesia</li>
+                           <li><input type="checkbox"name="country[]" value="Moldova"  class="country" /> Moldova</li>
+                           <li><input type="checkbox"name="country[]" value="Monaco"  class="country" /> Monaco</li>
+                           <li><input type="checkbox"name="country[]" value="Mongolia"  class="country" /> Mongolia</li>
+                           <li><input type="checkbox"name="country[]" value="Montenegro"  class="country" /> Montenegro</li>
+                           <li><input type="checkbox"name="country[]" value="Montserrat"  class="country" /> Montserrat</li>
+                           <li><input type="checkbox"name="country[]" value="Morocco"  class="country" /> Morocco</li>
+                           <li><input type="checkbox"name="country[]" value="Mozambique"  class="country" /> Mozambique</li>
+                           <li><input type="checkbox"name="country[]" value="Myanmar"  class="country" /> Myanmar</li>
+                           <li><input type="checkbox"name="country[]" value="Namibia"  class="country" /> Namibia</li>
+                           <li><input type="checkbox" name="country[]" value="Nauru" class="country" /> Nauru</li>
+                           <li><input type="checkbox"name="country[]" value="Nepal"  class="country" /> Nepal</li>
+                           <li><input type="checkbox"name="country[]" value="Netherlands"  class="country" /> Netherlands</li>
+                           <li><input type="checkbox"name="country[]" value="Netherlands Antilles"  class="country" /> Netherlands Antilles</li>
+                            <li><input type="checkbox"name="country[]" value="New Caledonia"  class="country" />New Caledonia</li>
+                            <li><input type="checkbox"name="country[]" value="New Zealand" class="country" />New Zealand</li>
+                            <li><input type="checkbox"name="country[]" value="Nicaragua"  class="country" />Nicaragua</li>
+                            <li><input type="checkbox" name="country[]" value="Niger" class="country" />Niger</li>
+                            <li><input type="checkbox" name="country[]" value="Nigeria" class="country" />Nigeria</li>
+                            <li><input type="checkbox" name="country[]" value="Niue" class="country" />Niue</li>
+                           <li><input type="checkbox" name="country[]" value="Norfolk Islands" class="country" /> Norfolk Islands</li>
+                            <li><input type="checkbox"name="country[]" value="Northern Mariana Islands"  class="country" />Northern Mariana Islands</li>
+                            <li><input type="checkbox" name="country[]" value="Norway" class="country" />Norway</li>
+                            <li><input type="checkbox"name="country[]" value="Oman"  class="country" />Oman</li>
+                            <li><input type="checkbox" name="country[]" value="Pakistan" class="country" />Pakistan</li>
+                            <li><input type="checkbox" name="country[]" value="Palau" class="country" />Palau</li>
+                            <li><input type="checkbox"name="country[]" value="Palestine"  class="country" />Palestine</li>
+                            <li><input type="checkbox"name="country[]" value="Panama"  class="country" />Panama</li>
+                            <li><input type="checkbox"name="country[]" value="Papua New Guinea"  class="country" />Papua New Guinea</li>
+                            <li><input type="checkbox"name="country[]" value="Paraguay"  class="country" />Paraguay</li>
+                           <li><input type="checkbox"name="country[]" value="Peru"  class="country" /> Peru</li>
+                            <li><input type="checkbox" name="country[]" value="Philippines" class="country" />Philippines</li>
+                            <li><input type="checkbox" name="country[]" value="Pitcairn" class="country" />Pitcairn</li>
+                            <li><input type="checkbox"name="country[]" value="Poland"  class="country" />Poland</li>
+                            <li><input type="checkbox"name="country[]" value="Portugal"  class="country" />Portugal</li>
+                            <li><input type="checkbox" name="country[]" value="Puerto Rico" class="country" />Puerto Rico</li>
+                            <li><input type="checkbox" name="country[]" value="Qatar" class="country" />Qatar</li>
+                            <li><input type="checkbox" name="country[]" value="Reunion" class="country" />Reunion</li>
+                           <li><input type="checkbox" name="country[]" value="Romania" class="country" /> Romania</li>
+                            <li><input type="checkbox"name="country[]" value="Russian Federation"  class="country" />Russian Federation</li>
+                            <li><input type="checkbox"name="country[]" value="Rwanda"  class="country" />Rwanda</li>
+                           <li><input type="checkbox" name="country[]" value="Saint Barthelemy" class="country" /> Saint Barthelemy</li>
+                            <li><input type="checkbox" name="country[]" value="Saint Helena, Ascension and Tristan da Cunha" class="country" />Saint Helena, Ascension and Tristan da Cunha</li>
+                            <li><input type="checkbox" name="country[]" value="Saint Kitts and Nevis" class="country" />Saint Kitts and Nevis</li>
+                            <li><input type="checkbox" name="country[]" value="Saint Lucia" class="country" />Saint Lucia</li>
+                            <li><input type="checkbox"name="country[]" value="Saint Pierre and Miquelon"  class="country" />Saint Pierre and Miquelon</li>
+                            <li><input type="checkbox"name="country[]" value="Saint Vincent and the Grenadines"  class="country" />Saint Vincent and the Grenadines</li>
+                            <li><input type="checkbox" name="country[]" value="Samoa" class="country" />Samoa</li>
+                            <li><input type="checkbox" name="country[]" value="San Marino" class="country" />San Marino</li>
+                            <li><input type="checkbox"name="country[]" value="Sao Tome and Principe"  class="country" />Sao Tome and Principe</li>
+                            <li><input type="checkbox"name="country[]" value="Saudi Arabia"  class="country" />Saudi Arabia</li>
+                            <li><input type="checkbox" name="country[]" value="Senegal" class="country" />Senegal</li>
+                            <li><input type="checkbox" name="country[]" value="Senegal" class="country" />Senegal</li>
+                            <li><input type="checkbox"name="country[]" value="Serbia and Montenegro"  class="country" />Serbia and Montenegro</li>
+                            <li><input type="checkbox"name="country[]" value="Seychelles"  class="country" />Seychelles</li>
+                            <li><input type="checkbox"name="country[]" value="Sierra Leone"  class="country" />Sierra Leone</li>
+                            <li><input type="checkbox"name="country[]" value="Singapore"  class="country" />Singapore</li>
+                            <li><input type="checkbox"name="country[]" value="Sint Maarten (Dutch part)"  class="country" />Sint Maarten (Dutch part)</li>
+                            <li><input type="checkbox"name="country[]" value="Slovakia"  class="country" />Slovakia</li>
+                            <li><input type="checkbox"name="country[]" value="Slovenia"  class="country" />Slovenia</li>
+                            <li><input type="checkbox"name="country[]" value="Solomon Islands"  class="country" />Solomon Islands</li>
+                            <li><input type="checkbox"name="country[]" value="Somalia"  class="country" />Somalia</li>
+                            <li><input type="checkbox"name="country[]" value="South Africa"  class="country" />South Africa</li>
+                            <li><input type="checkbox"name="country[]" value="South Georgia and the South Sandwich Islands"  class="country" />South Georgia and the South Sandwich Islands</li>
+                            <li><input type="checkbox"name="country[]" value="South Sudan"  class="country" />South Sudan</li>
+                            <li><input type="checkbox" name="country[]" value="Spain" class="country" />Spain</li>
+                            <li><input type="checkbox" name="country[]" value="Sri Lanka" class="country" />Sri Lanka</li>
+                            <li><input type="checkbox"name="country[]" value="Sudan"  class="country" />Sudan</li>
+                            <li><input type="checkbox" name="country[]" value="Suriname" class="country" />Suriname</li>
+                            <li><input type="checkbox" name="country[]" value="Svalbard and Jan Mayen" class="country" />Svalbard and Jan Mayen</li>
+                            <li><input type="checkbox"name="country[]" value="Sweden"  class="country" />Sweden</li>
+                            <li><input type="checkbox" name="country[]" value="Switzerland" class="country" />Switzerland</li>
+                            <li><input type="checkbox" name="country[]" value="Syria" class="country" />Syria</li>
+                            <li><input type="checkbox" name="country[]" value="Taiwan, China" class="country" />Taiwan, China</li>
+                            <li><input type="checkbox" name="country[]" value="Tajikistan" class="country" />Tajikistan</li>
+                            <li><input type="checkbox" name="country[]" value="Tanzania" class="country" />Tanzania</li>
+                            <li><input type="checkbox" name="country[]" value="" class="country" />Thailand</li>
+                            <li><input type="checkbox" name="country[]" value="Thailand" class="country" />Timor-Leste</li>
+                            <li><input type="checkbox"name="country[]" value="Togo"  class="country" />Togo</li>
+                            <li><input type="checkbox"name="country[]" value="Tokelau"  class="country" />Tokelau</li>
+                            <li><input type="checkbox"name="country[]" value="Tonga"  class="country" />Tonga</li>
+                            <li><input type="checkbox" name="country[]" value="Trinidad and Tobago" class="country" />Trinidad and Tobago</li>
+                            <li><input type="checkbox" name="country[]" value="Tunisia" class="country" />Tunisia</li>
+                            <li><input type="checkbox" name="country[]" value="Turkey" class="country" />Turkey</li>
+                            <li><input type="checkbox"name="country[]" value="Turkmenistan"  class="country" />Turkmenistan</li>
+                            <li><input type="checkbox" name="country[]" value="Turks and Caicos Islands" class="country" />Turks and Caicos Islands</li>
+                            <li><input type="checkbox" name="country[]" value="Tuvalu" class="country" />Tuvalu</li>
+                            <li><input type="checkbox"name="country[]" value="Uganda"  class="country" />Uganda</li>
+                            <li><input type="checkbox"name="country[]" value="Ukraine"  class="country" />Ukraine</li>
+                            <li><input type="checkbox"name="country[]" value="United Arab Emirates"  class="country" />United Arab Emirates</li>
+                            <li><input type="checkbox"name="country[]" value="United Kingdom"  class="country" />United Kingdom</li>
+                            <li><input type="checkbox" name="country[]" value="United States" class="country" />United States</li>
+                            <li><input type="checkbox" name="country[]" value="United States Minor Outlying Islands" class="country" />United States Minor Outlying Islands</li>
+                            <li><input type="checkbox" name="country[]" value="Uruguay" class="country" />Uruguay
+                            <li><input type="checkbox"name="country[]" value="Uzbekistan"  class="country" />Uzbekistan</li>
+                            <li><input type="checkbox"name="country[]" value="Vanuatu"  class="country" />Vanuatu</li>
+                            <li><input type="checkbox"name="country[]" value="Vatican City"  class="country" />Vatican City</li>
+                            <li><input type="checkbox"name="country[]" value="Venezuela, Bolivarian Republic of"  class="country" />Venezuela, Bolivarian Republic of</li>
+                            <li><input type="checkbox"name="country[]" value="Viet Nam"  class="country" />Viet Nam</li>
+                            <li><input type="checkbox"name="country[]" value="Virgin Islands (British)"  class="country" />Virgin Islands (British)</li>
+                            <li><input type="checkbox"name="country[]" value="Virgin Islands (U.S.)"  class="country" />Virgin Islands (U.S.)</li>
+                            <li><input type="checkbox"name="country[]" value="Wallis and Futuna"  class="country" />Wallis and Futuna</li>
+                            <li><input type="checkbox"name="country[]" value="Western Sahara"  class="country" />Western Sahara</li>
+                            <li><input type="checkbox"name="country[]" value="Yemen"  class="country" />Yemen</li>
+                            <li><input type="checkbox"name="country[]" value="Yugoslavia"  class="country" />Yugoslavia</li>
+                            <li><input type="checkbox"name="country[]" value="Zambia"  class="country" />Zambia</li>
+                            <li><input type="checkbox"name="country[]" value="Zimbabwe"  class="country" />Zimbabwe</li>
+                         
+                         
+                      </ul>
+                  </div>      
+                  
+                    <label class="checkbox mt-3">
+                      <input type="checkbox" id="cscdata">
+                      Include CSC Data
+                    </label>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div>
+              <h6>Comments Purpose </h6>
+              <textarea class="textarea" id="comments" placeholder="comment should be factual, objective and non-offensive please rember.......by the related person"></textarea>
+            </div>
+            <div class="file-upload-module" style="margin-top: 20px;">
+              <div class="tooltip"> 
+                <label style="margin-right: 20px;">Upload managers approval<i class="fa fa-info-circle" aria-hidden="true"></i> <span class="error">*</span></label>
+                <div class="tooltiptext">
+                  Please take a screenshot of the authorization you receive from your manager, this could be from an email or Teams as well
+                </div>
+              <input type="file" id="fileinput" style="margin-bottom: 10px;">
+              
+           </div>
+            <div class="mt-3 btss is-flex">
+              <button class="button is-success" onclick="submit();">Submit</button>
+              <button class="button is-danger">Cancel</button>
+            </div>
+         </div>
+        </div>
+        <div class="column">
+        </div>
+       
+      </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="./js/raise-req.js"></script>
+    <script>
+      var checkList = document.getElementById('list1');
+        var items = document.getElementById('items');
+        checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+          if (items.classList.contains('visible')) {
+            items.classList.remove('visible');
+            items.style.display = "none";
+          } else {
+            items.classList.add('visible');
+            items.style.display = "block";
+          }
+
+}
+
+items.onblur = function(evt) {
+  items.classList.remove('visible');
+}
+
+function allcheck(){
+
+        var svsp    =  $(".all").is(":checked");
+    
+        if(svsp ){ 
+                $(".checkss").attr("checked","checked");
+        }else{
+                $(".checkss").removeAttr("checked");
+        } 
+}
+
+var checkLists= document.getElementById('list2');
+        var country = document.getElementById('countries');
+        checkLists.getElementsByClassName('anchors')[0].onclick = function(evt) {
+          if (country.classList.contains('visible')) {
+            country.classList.remove('visible');
+            country.style.display = "none";
+          } else {
+            country.classList.add('visible');
+            country.style.display = "block";
+          }
+
+}
+
+country.onblur = function(evt) {
+  country.classList.remove('visible');
+}
+
+function allcountry(){
+
+var svsp    =  $(".allcountry").is(":checked");
+
+if(svsp ){ 
+        $(".country").attr("checked","checked");
+}else{
+        $(".country").removeAttr("checked");
+} 
+}
+    </script>
+<script src="myjs.js"></script>
+</body>
+</html>

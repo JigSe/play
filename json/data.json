@@ -1,0 +1,59 @@
+{
+    "Home Page" : {
+        "boxes" : ["Analytics","Product Content", "Growth Marketing", "Other"]
+    },
+    "Services Page" : {
+        "subtitle" : [
+            "Please select what is the reason you are contacting Analytics team", 
+            "Comments should be factual and objective"
+        ], 
+        "boxes" : [
+            "New Data Source", "Dashboard request", "Pricing", "Mistake in existing dashboard", "Updates", "Adhoc"
+        ]
+    },
+    "Request Page" : {
+        "left" : {
+            "input" : ["Refered Document (i)"], 
+            "text-area" : ["Describe issue (if any)"],
+            "date" : ["Target Date"]
+            
+        }, 
+        "right" : {
+            "input" : ["Project (if any)"], 
+            "text-area" : ["Describe goal"],
+            "dropdown" : {
+                "label" : "Market Information", 
+                "values" : ["Global", "Regional","National"]
+            }
+        }
+    },
+    "Approval Page" : {
+        "dropdown" : {
+            "label" : "Nature of request", 
+            "values" : ["Data access", "Data modif","Dashboard Request", "Pricing"]
+        }, 
+        "text-area" : ["Rejected reasons"], 
+        "requestor-details" : [
+            "SESA ID", 
+            "Name & Surname", 
+            "Business Division",
+             "Division Zone",
+             "Referred Document", 
+            "Project", 
+            "Describe issue", 
+            "Describe goal", 
+            "Market Information", 
+            "Service",
+            "Nature Of Request", 
+            "Rejected Reasons",
+            "Creation Date",
+            "Target Date", 
+            "Approved Date",
+            "Completion Date"
+        ]
+    }, 
+    "Request Home Page" :{
+        "table" : ["Request No","SESA ID",  "Name & Surname","Business Division","Division Zone", "Service", "Referred Document", "Market Information", "Creation Date", "Target Date","Completion Date",
+            "Approved Date" ,"Service","Project","Status"]
+    }
+}
